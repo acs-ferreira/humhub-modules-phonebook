@@ -27,6 +27,7 @@ $label_field2 = 'Name'; //change this to your needs
 $label_field3 = 'Phone'; //change this to your needs
 $label_field4 = 'Mobile'; //change this to your needs
 $label_field5 = 'E-mail'; //change this to your needs
+$label_field5b = 'Skype'; //change this to your needs
 $label_field6 = 'Job Title'; //change this to your needs
 $label_field7 = 'Country'; //change this to your needs
 $label_field8 = 'Timezone'; //change this to your needs
@@ -37,15 +38,14 @@ $label_field8 = 'Timezone'; //change this to your needs
 <div class="panel panel-default">
     <div class="panel-body">
 	<div class="panel-heading">
-            Company <strong>Phone Directory</strong> - Reach your internal collaborators the easy way!
+            Company <strong>Phone Directory</strong>
 	</div>
         <?= Html::beginForm('', 'get', ['class' => 'form-search']); ?>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
 		<div class="form-group form-group-search">
-                    <?= Html::textInput('keyword', $keyword, ['class' => 'form-control form-search', 'placeholder' => 'Search for users, country, job title...']); ?>
-                    <?= Html::submitButton(Yii::t('DirectoryModule.base', 'Search'), ['class' => 'btn btn-default btn-sm form-button-search']); ?>
+                    <input type="text" id="search" class="form-control form-search" value="" onkeyup="filter_table()" autocomplete="off" placeholder="Search for users, country, job title..."> 
                 </div>
             </div>
             <div class="col-md-3"></div>
@@ -61,9 +61,10 @@ $label_field8 = 'Timezone'; //change this to your needs
                         <th width="15%"><?= $label_field3 ?></th>
                         <th width="15%"><?= $label_field4 ?></th>
                         <th width="15%"><?= $label_field5 ?></th>
+			<th width="5%"><?= $label_field5b ?></th>
                         <th width="15%"><?= $label_field6 ?></th>
                         <th width="5%"><?= $label_field7 ?></th>
-                        <th width="15%"><?= $label_field8 ?></th>
+                        <th width="10%"><?= $label_field8 ?></th>
                     </tr>
 		</thead>
                 <tbody id="table-data">
@@ -73,6 +74,7 @@ $label_field8 = 'Timezone'; //change this to your needs
                     $field3 = Html::encode($user->profile->lastname);
                     $field4 = Html::encode($user->profile->phone_work);
                     $field5 = Html::encode($user->profile->phone_private);
+                    $field5b = Html::encode($user->profile->im_skype);
                     $field6 = Html::encode($user->email);
                     $field7 = Html::encode($user->profile->title);
                     $field8 = Html::encode($user->profile->country);
@@ -90,6 +92,9 @@ $label_field8 = 'Timezone'; //change this to your needs
                          <td><a href="<?= $user->getUrl(); ?>"><?= $field2 ?>&nbsp;<?= $field3 ?><a/></td>
                          <td><a href="tel:<?= $field4 ?>"><?= $field4 ?></a></td>
                          <td><a href="tel:<?= $field5 ?>"><?= $field5 ?></a></td>
+			 <td><a class="tt" title="" href="skype:<?= $field5b ?>?chat"
+				data-original-title="Call or chat with Skype"><i class="fa fa-skype" style="color:#00b0f3" aria-hidden="true"></i></a>
+			 </td>
                          <td><a style="color:#f60" href="mailto:<?= $field6 ?>"><?= $field6 ?></a></td>
 			 <td><?= $field7 ?></td>
                          <td><?= $field8 ?></td>
