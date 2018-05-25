@@ -1,6 +1,6 @@
 <?php
 
-namespace phonebook\humhub\modules\phonebook\controllers;
+namespace humhub\modules\phonebook\controllers;
 
 use humhub\modules\admin\components\Controller;
 
@@ -18,4 +18,3 @@ class AdminController extends Controller
     }
 
 }
-
