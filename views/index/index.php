@@ -53,18 +53,18 @@ $label_field8 = 'Timezone'; //change this to your needs
         <?= Html::endForm(); ?>
         <br>
         <div class="table-responsive">
-            <table id="table" class="main-table">
+            <table id="table" class="main-table" style="width:100%">
                 <thead>
                     <tr class="thead" style="vertical-align:middle; text-align:center; height:40px;">
-                        <th><?= $label_field1 ?></th>
-                        <th><?= $label_field2 ?></th>
-                        <th><?= $label_field3 ?></th>
-                        <th><?= $label_field4 ?></th>
-                        <th><?= $label_field5 ?></th>
-			<th><?= $label_field5b ?></th>
-                        <th><?= $label_field6 ?></th>
-                        <th><?= $label_field7 ?></th>
-                        <th><?= $label_field8 ?></th>
+                        <th style="width:5%"><?= $label_field1 ?></th>
+                        <th style="width:10%"><?= $label_field2 ?></th>
+                        <th style="width:15%"><?= $label_field3 ?></th>
+                        <th style="width:15%"><?= $label_field4 ?></th>
+                        <th style="width:5%"><?= $label_field5 ?></th>
+			<th style="width:10%"><?= $label_field5b ?></th>
+                        <th style="width:20%"><?= $label_field6 ?></th>
+                        <th style="width:10%"><?= $label_field7 ?></th>
+                        <th style="width:10%"><?= $label_field8 ?></th>
                     </tr>
 		</thead>
                 <tbody id="table-data">
