@@ -1,6 +1,6 @@
 <?php
 
-namespace  phonebook\humhub\modules\phonebook\assets;
+namespace humhub\modules\phonebook\assets;
 
 use yii\web\AssetBundle;
 
@@ -29,6 +29,7 @@ class Assets extends AssetBundle
     public $js = [
         'js/humhub.phonebook.js'
     ];
+
     public $css = [
         'css/humhub.phonebook.css'
     ];
