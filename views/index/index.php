@@ -26,8 +26,8 @@ $label_field1 = 'User'; //change this to your needs
 $label_field2 = 'Name'; //change this to your needs
 $label_field3 = 'Phone'; //change this to your needs
 $label_field4 = 'Mobile'; //change this to your needs
-$label_field5 = 'E-mail'; //change this to your needs
-$label_field5b = 'Skype'; //change this to your needs
+$label_field5 = 'Skype'; //change this to your needs
+$label_field5b = 'E-mail'; //change this to your needs
 $label_field6 = 'Job Title'; //change this to your needs
 $label_field7 = 'Country'; //change this to your needs
 $label_field8 = 'Timezone'; //change this to your needs
@@ -61,8 +61,8 @@ $label_field8 = 'Timezone'; //change this to your needs
                         <th width="15%"><?= $label_field3 ?></th>
                         <th width="15%"><?= $label_field4 ?></th>
                         <th width="15%"><?= $label_field5 ?></th>
-			<th width="5%"><?= $label_field5b ?></th>
-                        <th width="15%"><?= $label_field6 ?></th>
+			<th width="3%"><?= $label_field5b ?></th>
+                        <th width="17%"><?= $label_field6 ?></th>
                         <th width="5%"><?= $label_field7 ?></th>
                         <th width="10%"><?= $label_field8 ?></th>
                     </tr>
