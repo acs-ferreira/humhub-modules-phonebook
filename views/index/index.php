@@ -20,7 +20,7 @@ $users = User::find()
             ->limit(100) //how many users should be shown on one page
             ->all();
 
-$global_number = '+43xxx'; //change this to your needs
+$global_number = ''; //change this to your needs
 
 $label_field1 = 'User'; //change this to your needs
 $label_field2 = 'Country'; //change this to your needs
@@ -88,7 +88,7 @@ $label_field8 = 'Timezone'; //change this to your needs
                          <td><a href="<?= $user->getUrl(); ?>"><?= $field3 ?>&nbsp;<?= $field4 ?><a/></td>
                          <td><a href="tel:<?= $global_number ?><?= $field5 ?>"><?= $field5 ?></a></td>
                          <td><a href="tel:<?= $field6 ?>"><?= $field6 ?></a></td>
-                         <td><a href="mailto:<?= $field7 ?>"><?= $field7 ?></a></td>
+                         <td><a style="color:#f60" href="mailto:<?= $field7 ?>"><?= $field7 ?></a></td>
                          <td><?= $field8 ?></td>
                          <td><?= $field9 ?></td>
                      </tr>
