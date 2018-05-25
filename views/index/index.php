@@ -85,10 +85,10 @@ $label_field8 = 'Timezone'; //change this to your needs
                              </a>
 			 </td>
                          <td><?= $field2 ?></td>
-                         <td><a style="color:#e10000; font-weight:700; font-size:13px; text-decoration:underline;" href="<?= $user->getUrl(); ?>"><?= $field3 ?>&nbsp;<?= $field4 ?><a/></td>
+                         <td><a href="<?= $user->getUrl(); ?>"><?= $field3 ?>&nbsp;<?= $field4 ?><a/></td>
                          <td><a href="tel:<?= $global_number ?><?= $field5 ?>"><?= $field5 ?></a></td>
                          <td><a href="tel:<?= $field6 ?>"><?= $field6 ?></a></td>
-                         <td><a style="color:#e10000; font-weight:700; font-size:13px; text-decoration:underline;" href="mailto:<?= $field7 ?>"><?= $field7 ?></a></td>
+                         <td><a href="mailto:<?= $field7 ?>"><?= $field7 ?></a></td>
                          <td><?= $field8 ?></td>
                          <td><?= $field9 ?></td>
                      </tr>
