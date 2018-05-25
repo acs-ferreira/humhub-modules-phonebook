@@ -20,7 +20,7 @@ class Events extends Object
             'label' => Yii::t('PhonebookModule.base', 'Phonebook'),
             'icon' => '<i class="fa fa-phone"></i>',
             'url' => Url::to(['/phonebook/index']),
-            'sortOrder' => 1000,
+            'sortOrder' => 200,
             'isActive' => (Yii::$app->controller->module && Yii::$app->controller->module->id == 'phonebook' && Yii::$app->controller->id == 'index'),
         ]);
     }
