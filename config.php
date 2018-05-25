@@ -11,7 +11,7 @@ return [
             'callback' => ['phonebook\humhub\modules\phonebook\Events', 'onTopMenuInit'],
         ],
         [
-            'urlManagerRules' => [
-                'telefonliste' => 'phonebook/index'
+            'urlManagerRules' => ['telefonliste' => 'phonebook/index']
         ]
+    ]
 ];
