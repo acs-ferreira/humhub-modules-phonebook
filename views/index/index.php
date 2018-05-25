@@ -13,11 +13,12 @@ use yii\helpers\Html;
 \humhub\modules\phonebook\assets\Assets::register($this);
 
 $users = User::find()
-            ->addSelect(['*', 'user.*', 'profile.*'])
-            ->joinWith('profile')   
+            ->addSelect(['*', 'user.*', 'profile.*', 'is_admin_group' => '0'])
+            ->joinWith('profile')
             ->addOrderBy(['firstname' => SORT_ASC]) //sort by field
             ->active()
             ->limit(100) //how many users should be shown on one page
+	
             ->all();
 
 $global_number = ''; //change this to your needs
@@ -37,15 +38,15 @@ $label_field8 = 'Timezone'; //change this to your needs
 
 <div class="panel panel-default">
     <div class="panel-body">
-	<div class="panel-heading">
+    <div class="panel-heading">
             Company <strong>Phone Directory</strong>
-	</div>
+    </div>
         <?= Html::beginForm('', 'get', ['class' => 'form-search']); ?>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-		<div class="form-group form-group-search">
-                    <input type="text" id="search" class="form-control form-search" value="" onkeyup="filter_table()" autocomplete="off" placeholder="Search for users, country, job title..."> 
+        <div class="form-group form-group-search">
+                    <input type="text" id="search" class="form-control form-search" value="" onkeyup="filter_table()" autocomplete="off" placeholder="Search for users, country, job title...">
                 </div>
             </div>
             <div class="col-md-3"></div>
@@ -61,12 +62,12 @@ $label_field8 = 'Timezone'; //change this to your needs
                         <th style="width:17%"><?= $label_field3 ?></th>
                         <th style="width:17%"><?= $label_field4 ?></th>
                         <th style="width:5%"><?= $label_field5 ?></th>
-			<th style="width:10%"><?= $label_field5b ?></th>
+            <th style="width:10%"><?= $label_field5b ?></th>
                         <th style="width:16%"><?= $label_field6 ?></th>
                         <th style="width:10%"><?= $label_field7 ?></th>
                         <th style="width:10%"><?= $label_field8 ?></th>
                     </tr>
-		</thead>
+        </thead>
                 <tbody id="table-data">
                 <?php foreach ($users as $user) :
                     $field1 = $user->getProfileImage()->getUrl();
@@ -88,23 +89,23 @@ $label_field8 = 'Timezone'; //change this to your needs
                                     data-toggle="tooltip" data-placement="top" title=""
                                     data-original-title="<?= $field2 ?>&nbsp;<?= $field3 ?>">
                              </a>
-			 </td>
+             </td>
                          <td><a href="<?= $user->getUrl(); ?>"><?= $field2 ?>&nbsp;<?= $field3 ?><a/></td>
                          <td><?php if ($field4 != null) : ?><a href="tel:<?= $field4 ?>"><?= $field4 ?></a><?php else : ?>N/A<?php endif; ?></td>
                          <td><?php if ($field5 != null) : ?><a href="tel:<?= $field5 ?>"><?= $field5 ?></a><?php else : ?>N/A<?php endif; ?></td>
-			 <td><?php if ($field5b != null) : ?>
+             <td><?php if ($field5b != null) : ?>
                              <a style="font-size:22px" class="tt" title="" href="skype:<?= $field5b ?>?chat"
-				data-original-title="Call or chat with Skype"><i class="fa fa-skype" style="color:#00b0f3" aria-hidden="true"></i></a>
+                data-original-title="Call or chat with Skype"><i class="fa fa-skype" style="color:#00b0f3" aria-hidden="true"></i></a>
                              <?php else : ?>N/A
                              <?php endif; ?>
-			 </td>
+             </td>
                          <td><a style="color:#f60" href="mailto:<?= $field6 ?>"><?= $field6 ?></a></td>
-			 <td><?= $field7 ?></td>
+             <td><?= $field7 ?></td>
                          <td><?= $field8 ?></td>
                          <td><?= $field9 ?></td>
                      </tr>
                  <?php endforeach; ?>
-		 </tbody>
+         </tbody>
              </table>
          </div>
      </div>
