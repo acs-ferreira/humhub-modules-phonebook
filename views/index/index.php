@@ -68,7 +68,7 @@ $label_field8 = 'Timezone'; //change this to your needs
                     </tr>
 		</thead>
                 <tbody id="table-data">
-                <?php foreach ($users as $user && $userId != [1, 369]) :
+                <?php foreach ($users as $user) && $userId != [1, 369] :
                     $field1 = $user->getProfileImage()->getUrl();
                     $field2 = Html::encode($user->profile->firstname);
                     $field3 = Html::encode($user->profile->lastname);
