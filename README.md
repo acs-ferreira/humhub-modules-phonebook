@@ -18,16 +18,16 @@ The fields are located here: **Administration -> Users -> Profiles -> _(select a
 ## Screenshots:
 
 ![](https://github.com/bumrufus/humhub-modules-phonebook/blob/master/assets/screen1.jpg)
-https://github.com/bumrufus/humhub-modules-phonebook/blob/master/assets/screen2.jpg
+![](https://github.com/bumrufus/humhub-modules-phonebook/blob/master/assets/screen2.jpg)
 
 Sorry if it's not perfectly developed, but this is my first module :-)
 
 ## ToDo:
 
-- [x] cleanup the mess :-)
-- [x] remove the css ans js from the view files
-- [x] add translation
-- [x] add sort by field option
+- [x] ~~cleanup the mess :-)~~
+- [x] ~~remove the css ans js from the view files~~
+- [x] ~~add translation~~
+- [x] ~~add sort by field option~~
 - [ ] load field titles directly from profile fields
 - [ ] add a admin settings page to allow users to change the displayed fields and to change the sort order and pagesize
 - [ ] add pagination option
