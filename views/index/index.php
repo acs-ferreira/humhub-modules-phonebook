@@ -13,7 +13,7 @@ use yii\helpers\Html;
 \humhub\modules\phonebook\assets\Assets::register($this);
 
 $users = User::find()
-            ->addSelect(['*', 'user.*', 'profile.*', 'is_admin_group' => '0'])
+            ->addSelect(['*', 'user.*', 'profile.*'])
             ->joinWith('profile')
             ->addOrderBy(['firstname' => SORT_ASC]) //sort by field
             ->active()
