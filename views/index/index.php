@@ -81,7 +81,7 @@ $label_field8 = 'Timezone'; //change this to your needs
                                 <img src="<?= $field1 ?>" class="img-rounded tt img_margin"
                                     height="40" width="40" alt="40x40" style="width: 40px; height: 40px; "
                                     data-toggle="tooltip" data-placement="top" title=""
-                                    data-original-title="<?= $field3 ?>&nbsp;<?= $field4 ?>">
+                                    data-original-title="<?= $field2 ?>&nbsp;<?= $field3 ?>">
                              </a>
 			 </td>
                          <td><a href="<?= $user->getUrl(); ?>"><?= $field2 ?>&nbsp;<?= $field3 ?><a/></td>
