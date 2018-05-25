@@ -56,15 +56,15 @@ $label_field8 = 'Timezone'; //change this to your needs
             <table id="table" class="main-table">
                 <thead>
                     <tr class="thead" style="vertical-align:middle; text-align:center; height:40px;">
-                        <th width="5%"><?= $label_field1 ?></th>
-                        <th width="15%"><?= $label_field2 ?></th>
-                        <th width="15%"><?= $label_field3 ?></th>
-                        <th width="15%"><?= $label_field4 ?></th>
-                        <th width="15%"><?= $label_field5 ?></th>
-			<th width="3%"><?= $label_field5b ?></th>
-                        <th width="17%"><?= $label_field6 ?></th>
-                        <th width="5%"><?= $label_field7 ?></th>
-                        <th width="10%"><?= $label_field8 ?></th>
+                        <th><?= $label_field1 ?></th>
+                        <th><?= $label_field2 ?></th>
+                        <th><?= $label_field3 ?></th>
+                        <th><?= $label_field4 ?></th>
+                        <th><?= $label_field5 ?></th>
+			<th><?= $label_field5b ?></th>
+                        <th><?= $label_field6 ?></th>
+                        <th><?= $label_field7 ?></th>
+                        <th><?= $label_field8 ?></th>
                     </tr>
 		</thead>
                 <tbody id="table-data">
@@ -92,8 +92,9 @@ $label_field8 = 'Timezone'; //change this to your needs
                          <td><a href="<?= $user->getUrl(); ?>"><?= $field2 ?>&nbsp;<?= $field3 ?><a/></td>
                          <td><a href="tel:<?= $field4 ?>"><?= $field4 ?></a></td>
                          <td><a href="tel:<?= $field5 ?>"><?= $field5 ?></a></td>
-			 <td><a class="tt" title="" href="skype:<?= $field5b ?>?chat"
+			 <td><?php if ($user->profile->im_skype) != null : ?><a class="tt" title="" href="skype:<?= $field5b ?>?chat"
 				data-original-title="Call or chat with Skype"><i class="fa fa-skype" style="color:#00b0f3" aria-hidden="true"></i></a>
+                             <?php endif; ?>  
 			 </td>
                          <td><a style="color:#f60" href="mailto:<?= $field6 ?>"><?= $field6 ?></a></td>
 			 <td><?= $field7 ?></td>
