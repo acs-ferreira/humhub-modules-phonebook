@@ -18,7 +18,7 @@ $users = User::find()
             ->addOrderBy(['firstname' => SORT_ASC]) //sort by field
             ->active()
             ->limit(100) //how many users should be shown on one page
-            ->where('is_admin_group' => '0')
+            ->where(['is_admin_group' => '0'])
             ->all();
 
 $global_number = ''; //change this to your needs
