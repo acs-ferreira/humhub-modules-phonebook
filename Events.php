@@ -1,10 +1,10 @@
 <?php
 
-namespace  phonebook\humhub\modules\phonebook;
+namespace humhub\modules\phonebook;
 
 use Yii;
 use yii\helpers\Url;
-use yii\base\Object
+use yii\base\Object;
 
 class Events extends Object
 {
