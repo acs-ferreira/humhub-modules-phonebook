@@ -36,13 +36,13 @@ $label_field8 = 'Timezone'; //change this to your needs
 
 <div class="panel panel-default">
     <div class="panel-body">
-        <h1>Ekinops Phone Directory</h1>
+        Company <strong>Phone Directory</strong> - Reach your internal collaborators the easy way!
         <?= Html::beginForm('', 'get', ['class' => 'form-search']); ?>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <div class="form-group form-group-search">
-                  <input type="text" id="search" class="form-control form-search" value="" onkeyup="filter_table()" autocomplete="off">       
+                  <input type="text" id="search" class="form-control form-search" value="" onkeyup="filter_table()" autocomplete="off" placeholder="Search for users, countrys, job title...>       
                 </div>
             </div>
             <div class="col-md-3"></div>
