@@ -6,14 +6,12 @@ Based on the core module **Directory**
 I've developed it for my personal use. 
 
 First you have to change the fields displayed in the list here:
-
 https://github.com/bumrufus/humhub-modules-phonebook/blob/6b938c00e2b361c1971bb9199bac2bd3962a9e75/views/index/index.php#L30-L39
 
 and here:
-
 https://github.com/bumrufus/humhub-modules-phonebook/blob/6b938c00e2b361c1971bb9199bac2bd3962a9e75/views/index/index.php#L97-L105
 
-The fields are located here: **Administration -> Users -> Profiles -> _(select a)_ Profile -> Internal Name
+The fields are located here: **Administration -> Users -> Profiles -> _(select a)_ Profile -> Internal Name**
 
 ## Screenshots:
 
