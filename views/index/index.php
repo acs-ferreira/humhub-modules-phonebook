@@ -58,11 +58,11 @@ $label_field8 = 'Timezone'; //change this to your needs
                     <tr class="thead" style="vertical-align:middle; text-align:center; height:40px;">
                         <th style="width:5%"><?= $label_field1 ?></th>
                         <th style="width:10%"><?= $label_field2 ?></th>
-                        <th style="width:15%"><?= $label_field3 ?></th>
-                        <th style="width:15%"><?= $label_field4 ?></th>
+                        <th style="width:17%"><?= $label_field3 ?></th>
+                        <th style="width:17%"><?= $label_field4 ?></th>
                         <th style="width:5%"><?= $label_field5 ?></th>
 			<th style="width:10%"><?= $label_field5b ?></th>
-                        <th style="width:20%"><?= $label_field6 ?></th>
+                        <th style="width:16%"><?= $label_field6 ?></th>
                         <th style="width:10%"><?= $label_field7 ?></th>
                         <th style="width:10%"><?= $label_field8 ?></th>
                     </tr>
