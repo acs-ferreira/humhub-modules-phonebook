@@ -2,8 +2,8 @@
 
 return [
     'id' => 'phonebook',
-    'class' => 'phonebook\humhub\modules\phonebook\Module',
-    'namespace' => 'phonebook\humhub\modules\phonebook',
+    'class' => '\humhub\modules\phonebook\Module',
+    'namespace' => '\humhub\modules\phonebook',
     'events' => [
         [
             'class' => \humhub\widgets\TopMenu::class,
