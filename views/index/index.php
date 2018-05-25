@@ -36,7 +36,7 @@ $label_field8 = 'Timezone'; //change this to your needs
 
 <div class="panel panel-default">
     <div class="panel-body">
-        <br>
+        <h1>Ekinops Phone Directory</h1>
         <?= Html::beginForm('', 'get', ['class' => 'form-search']); ?>
         <div class="row">
             <div class="col-md-3"></div>
