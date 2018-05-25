@@ -10,7 +10,7 @@ use Yii;
 use yii\helpers\Html;
 
 // Register our module assets, this could also be done within the controller
-\humhub\modules\phonebook\assets\Assets::register($this);
+humhub\modules\phonebook\assets\Assets::register($this);
 
 $users = User::find()
             ->addSelect(['*', 'user.*', 'profile.*'])
