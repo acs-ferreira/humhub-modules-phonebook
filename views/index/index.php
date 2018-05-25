@@ -36,13 +36,16 @@ $label_field8 = 'Timezone'; //change this to your needs
 
 <div class="panel panel-default">
     <div class="panel-body">
-        Company <strong>Phone Directory</strong> - Reach your internal collaborators the easy way!
+	<div class="panel-heading">
+            Company <strong>Phone Directory</strong> - Reach your internal collaborators the easy way!
+	</div>
         <?= Html::beginForm('', 'get', ['class' => 'form-search']); ?>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div class="form-group form-group-search">
-                  <input type="text" id="search" class="form-control form-search" value="" onkeyup="filter_table()" autocomplete="off" placeholder="Search for users, countrys, job title...">       
+		<div class="form-group form-group-search">
+                    <?= Html::textInput('keyword', $keyword, ['class' => 'form-control form-search', 'placeholder' => 'Search for users, country, job title...']); ?>
+                    <?= Html::submitButton(Yii::t('DirectoryModule.base', 'Search'), ['class' => 'btn btn-default btn-sm form-button-search']); ?>
                 </div>
             </div>
             <div class="col-md-3"></div>
