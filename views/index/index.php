@@ -22,14 +22,14 @@ $users = User::find()
 
 $global_number = '+43xxx'; //change this to your needs
 
-$label_field1 = 'Foto'; //change this to your needs
-$label_field2 = 'Kürzel'; //change this to your needs
+$label_field1 = 'User'; //change this to your needs
+$label_field2 = 'Country'; //change this to your needs
 $label_field3 = 'Name'; //change this to your needs
-$label_field4 = 'Festnetz'; //change this to your needs
-$label_field5 = 'Handy'; //change this to your needs
-$label_field6 = 'E-Mail'; //change this to your needs
-$label_field7 = 'Position'; //change this to your needs
-$label_field8 = 'Abteilung'; //change this to your needs
+$label_field4 = 'Phone'; //change this to your needs
+$label_field5 = 'Mobile'; //change this to your needs
+$label_field6 = 'E-mail'; //change this to your needs
+$label_field7 = 'Job Title'; //change this to your needs
+$label_field8 = 'Timezone'; //change this to your needs
 
 //also change the variables = $field1 - $field9, i want to improve that later
 ?>
@@ -66,14 +66,14 @@ $label_field8 = 'Abteilung'; //change this to your needs
                 <tbody id="table-data">
                 <?php foreach ($users as $user) :
                     $field1 = $user->getProfileImage()->getUrl();
-                    $field2 = Html::encode($user->profile->kuerzel);
-                    $field3 = Html::encode($user->profile->lastname);
-                    $field4 = Html::encode($user->profile->firstname);
-                    $field5 = Html::encode($user->profile->festnetz);
-                    $field6 = Html::encode($user->profile->handy);
+                    $field2 = Html::encode($user->profile->country);
+                    $field3 = Html::encode($user->profile->firstname);
+                    $field4 = Html::encode($user->profile->lastname);
+                    $field5 = Html::encode($user->profile->phone);
+                    $field6 = Html::encode($user->profile->mobile);
                     $field7 = Html::encode($user->email);
                     $field8 = Html::encode($user->profile->title);
-                    $field9 = UserGroupList::widget(['user' => $user]);
+                    $field9 = Html::encode($user->time_zone);
                 ?>
                     <tr class="tbody" style="text-align:center; border-top: 1px solid #eee;">
                         <td style="padding:10px;">
