@@ -4,8 +4,9 @@ namespace  phonebook\humhub\modules\phonebook;
 
 use Yii;
 use yii\helpers\Url;
+use yii\base\Object
 
-class Events extends \yii\base\Object
+class Events extends Object
 {
 
     /**
@@ -24,24 +25,4 @@ class Events extends \yii\base\Object
         ]);
     }
 
-
-    /**
-     * Defines what to do if admin menu is initialized.
-     *
-     * @param $event
-     */
-//   public static function onAdminMenuInit($event)
-//    {
-//        $event->sender->addItem(array(
-//            'label' => Yii::t('PhonebookModule.base', 'Phonebook'),
-//            'url' => Url::to(['/phonebook/admin']),
-//            'group' => 'manage',
-//            'icon' => '<i class="fa fa-phone"></i>',
-//            'isActive' => (Yii::$app->controller->module && Yii::$app->controller->module->id == 'phonebook' && Yii::$app->controller->id == 'admin'),
-//            'sortOrder' => 99999,
-//        ));
-//    }
-
-
 }
-
