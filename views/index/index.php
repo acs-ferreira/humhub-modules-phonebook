@@ -90,9 +90,9 @@ $label_field8 = 'Timezone'; //change this to your needs
                              </a>
 			 </td>
                          <td><a href="<?= $user->getUrl(); ?>"><?= $field2 ?>&nbsp;<?= $field3 ?><a/></td>
-                         <td><a href="tel:<?= $field4 ?>"><?= $field4 ?></a></td>
+                         <td><?php if ($field5b != null) : ?><a href="tel:<?= $field4 ?>"><?= $field4 ?></a><?php else : ?>N/A<?php endif; ?></td>
                          <td><a href="tel:<?= $field5 ?>"><?= $field5 ?></a></td>
-			 <td><?php if ($user->profile->im_skype != null) : ?>
+			 <td><?php if ($field5b != null) : ?>
                              <a style="font-size:22px" class="tt" title="" href="skype:<?= $field5b ?>?chat"
 				data-original-title="Call or chat with Skype"><i class="fa fa-skype" style="color:#00b0f3" aria-hidden="true"></i></a>
                              <?php else : ?>N/A
