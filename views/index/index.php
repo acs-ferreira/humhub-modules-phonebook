@@ -15,7 +15,7 @@ use yii\helpers\Html;
 $users = User::find()
             ->addSelect(['*', 'user.*', 'profile.*'])
             ->joinWith('profile')   
-            ->addOrderBy(['lastname' => SORT_ASC]) //sort by field
+            ->addOrderBy(['firstname' => SORT_ASC]) //sort by field
             ->active()
             ->limit(100) //how many users should be shown on one page
             ->all();
@@ -56,7 +56,7 @@ $label_field8 = 'Timezone'; //change this to your needs
                         <th width="5%"><?= $label_field1 ?></th>
                         <th width="5%"><?= $label_field2 ?></th>
                         <th width="15%"><?= $label_field3 ?></th>
-                        <th width="5%"><?= $label_field4 ?></th>
+                        <th width="15%"><?= $label_field4 ?></th>
                         <th width="15%"><?= $label_field5 ?></th>
                         <th width="15%"><?= $label_field6 ?></th>
                         <th width="15%"><?= $label_field7 ?></th>
@@ -79,7 +79,7 @@ $label_field8 = 'Timezone'; //change this to your needs
                         <td style="padding:10px;">
                             <a href="<?= $user->getUrl(); ?>">
                                 <img src="<?= $field1 ?>" class="img-rounded tt img_margin"
-                                    height="80" width="80" alt="80x80" style="width: 80px; height: 80px; "
+                                    height="40" width="40" alt="40x40" style="width: 40px; height: 40px; "
                                     data-toggle="tooltip" data-placement="top" title=""
                                     data-original-title="<?= $field3 ?>&nbsp;<?= $field4 ?>">
                              </a>
