@@ -17,10 +17,12 @@ The fields are located here: **Administration -> Users -> Profiles -> _(select a
 
 ## Screenshots:
 
-Front:
+**Front:**
+
 ![](https://github.com/bumrufus/humhub-modules-phonebook/blob/master/assets/screen1.jpg)
 
-Administration:
+**Administration:**
+
 ![](https://github.com/bumrufus/humhub-modules-phonebook/blob/master/assets/screen2.jpg)
 
 Sorry if it's not perfectly developed, but this is my first module :-)
