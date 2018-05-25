@@ -84,11 +84,11 @@ $label_field8 = 'Timezone'; //change this to your needs
                                     data-original-title="<?= $field3 ?>&nbsp;<?= $field4 ?>">
                              </a>
 			 </td>
-                         <td><?= $field2 ?></td>
-                         <td><a href="<?= $user->getUrl(); ?>"><?= $field3 ?>&nbsp;<?= $field4 ?><a/></td>
-                         <td><a href="tel:<?= $global_number ?><?= $field5 ?>"><?= $field5 ?></a></td>
-                         <td><a href="tel:<?= $field6 ?>"><?= $field6 ?></a></td>
-                         <td><a style="color:#f60" href="mailto:<?= $field7 ?>"><?= $field7 ?></a></td>
+                         <td><a href="<?= $user->getUrl(); ?>"><?= $field2 ?>&nbsp;<?= $field3 ?><a/></td>
+                         <td><a href="tel:<?= $field4 ?>"><?= $field4 ?></a></td>
+                         <td><a href="tel:<?= $field5 ?>"><?= $field5 ?></a></td>
+                         <td><a style="color:#f60" href="mailto:<?= $field6 ?>"><?= $field6 ?></a></td>
+			 <td><?= $field7 ?></td>
                          <td><?= $field8 ?></td>
                          <td><?= $field9 ?></td>
                      </tr>
