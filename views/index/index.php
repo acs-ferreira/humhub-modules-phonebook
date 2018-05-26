@@ -36,9 +36,9 @@ $label_field8 = 'Timezone'; //change this to your needs
 
 <div class="panel panel-default">
     <div class="panel-body">
-    <div class="panel-heading">
-            Company <strong>Phone Directory</strong>
-    </div>
+        <div class="panel-heading">
+            <?= Html::encode(Company <strong>Phone Directory</strong>); ?>
+        </div>
         <?= Html::beginForm('', 'get', ['class' => 'form-search']); ?>
         <div class="row">
             <div class="col-md-3"></div>
