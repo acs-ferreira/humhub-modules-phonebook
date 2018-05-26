@@ -37,7 +37,7 @@ $label_field8 = 'Timezone'; //change this to your needs
 <div class="panel panel-default">
     <div class="panel-body">
         <div class="panel-heading">
-            <p>Company <strong>Phone Directory</strong></p>
+            <p><i class="fa fa-phone"></i> Company <strong>Phone Directory</strong></p>
         </div>
         <?= Html::beginForm('', 'get', ['class' => 'form-search']); ?>
         <div class="row">
