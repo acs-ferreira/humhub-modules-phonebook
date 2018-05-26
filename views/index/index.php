@@ -54,7 +54,7 @@ $label_field8 = 'Timezone'; //change this to your needs
         <div class="table-responsive">
             <table id="table" class="main-table" style="width:100%">
                 <thead>
-                    <tr class="thead" style="vertical-align:middle; text-align:center; height:40px;">
+                    <tr class="thead">
                         <th style="width:5%"><?= $label_field1 ?></th>
                         <th style="width:10%"><?= $label_field2 ?></th>
                         <th style="width:17%"><?= $label_field3 ?></th>
