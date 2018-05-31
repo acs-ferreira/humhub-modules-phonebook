@@ -5,6 +5,7 @@ namespace humhub\modules\phonebook\views\index;
 use humhub\modules\user\widgets\Image;
 use humhub\modules\user\models\Profile;
 use humhub\modules\user\models\User;
+use humhub\widgets\FooterMenu;
 use yii\helpers\Html;
 
 // Register our module assets, this could also be done within the controller
@@ -106,5 +107,6 @@ $label_field8 = 'Timezone'; //change this to your needs
                  </tbody>
              </table>
          </div>
+         <?= FooterMenu::widget(); ?>
      </div>
 </div>
