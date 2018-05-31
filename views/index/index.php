@@ -107,6 +107,6 @@ $label_field8 = 'Timezone'; //change this to your needs
                  </tbody>
              </table>
          </div>
-         <?= FooterMenu::widget(); ?>
      </div>
+     <?= FooterMenu::widget(); ?>
 </div>
